@@ -1,6 +1,7 @@
 from telegram.ext import Updater, CommandHandler
 
-TOKEN = "8731476743:AAGN2k8WxN7MTphKjv3hy36tN-oRnxRAO6M"
+import os
+TOKEN = os.getenv("TOKEN")
 
 def Start(update,context):
     update.message.reply_text(" Bot Is Working \n Use /Play To Start The Game ")
